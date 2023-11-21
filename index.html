@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Kitchen a/s</title>
+    <!-- Favicon ved fanen Kitchen a/s-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <style>
+        .nav-link.active:hover {
+            color: blue !important;
+        }
+
+
+        .masthead .masthead-avatar {
+            max-width: 70%;
+        }
+
+        /*Sørger for at main-picture altid udgør 70 % af viewport*/
+
+        .page-section .page-section-heading {
+            color: #b59f84 !important;
+        }
+
+        /*Farven på h2 overskrifter/undersektionerne*/
+        /*Important anvendes til specificitet for at overrule Bootstrap CSS*/
+
+        .svg-inline--fa.fa-bars {
+            color: black !important;
+        }
+
+
+        /*Farver burgermenu sort*/
+        /*Important anvendes til specificitet for at overrule Bootstrap CSS*/
+
+        .img-fluid {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            height: 20rem;
+            position: relative !important;
+            z-index: 1 !important;
+        }
+
+        /*Img-fluid anvendes i Bootstrap til responsive webdesign. */
+        /*Img er oprindeligt et inline-element. Display placerer billedet i boksmodellen*/
+        /*Margen anvendes til at placerer billedet i midten af boksen*/
+        /*width and height anvendes til at bestemme billedernes størrelse*/
+
+        .dknap {
+            font-size: 1.5rem !important;
+        }
+
+        /*HTML-element <p> har fået en class dknap, for at undgå al <p> på siden påvirkes*/
+        /*Font-size er sat til rem for at imødekomme responsive web design*/
+
+        .btn-outline-light {
+            background-color: #fdf4e3 !important;
+            color: #b59f84 !important;
+        }
+
+        /*Farver Download-knap og tekst*/
+
+        #produktkategorier.page-section.produktkategorier {
+            background-color: #fffff5 !important;
+        }
+
+        /*Baggrundsfarve på produktkategorier*/
+        /*# refererer til id fremfor class*/
+
+        .img-fluid:hover {
+            opacity: 0.5 !important;
+        }
+
+        /*Ændrer opacity når musen føres over billedet*/
+
+        .fa-plus {
+            display: none !important;
+        }
+
+        /*Har slettet et element (plus) og fjerne den plads, som objektet har udgjort*/
+
+        .portfolio-modal .portfolio-modal-title {
+            color: #bf9f84 !important;
+        }
+
+        /*Farven på titlen på undersiden/pop-up-menu*/
+
+        .btn-primary {
+            background-color: #b59f84 !important;
+            border-color: #b59f84 !important;
+            justify-content: center !important;
+        }
+
+        /*Farven på 'Luk sektion' på undersiden/pop-up-menu uden aktion*/
+
+        .btn-primary:hover {
+            background-color: #b59f8463 !important;
+            border-color: #b59f8463 !important;
+        }
+
+        /*Farven på 'Luk sektion' på undersiden/pop-up-menu, når musen føres over/hover*/
+
+        .btn-primary:active {
+            background-color: #00000063 !important;
+            border-color: #00000063 !important;
+        }
+
+        /*Farven på 'Luk sektion' på undersiden/pop-up-menu, når knappen er aktiv/der trykkes*/
+
+        .produkt {
+            text-align: center !important;
+            font-weight: bold !important;
+            font-size: 1.5rem !important;
+        }
+
+        /*Centrer text under billede*/
+        /*Gør teskttypen fed*/
+        /*Justerer tesktstørrelsen efter responsive web design*/
+
+        #omos.page-section.bg-primary.text-white.mb-0 {
+            background-color: #ffffff !important;
+        }
+
+        /*Baggrundfarve på underside 'om os' */
+
+        #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+            color: black !important;
+        }
+
+        /*Ændrer farven på menukategorierne, når musen føres/hover over*/
+    </style>
+
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Kitchen a/s</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#køkkenserier">Køkkenserier</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#produktkategorier">Produktkategorier</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#omos">Om
+                            os</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#kontaktos">Kontakt os</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/portfolio/Nordiskkøkken.jpg" alt="Nordisk Køkkendesign" />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0" style="color: #b59f84">Nordisk køkkendesign</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section køkkenserier" id="køkkenserier">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Køkkenserier</h2><br><br>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/køkken1.jpg" alt="Lovi Køkkenserie" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/køkken2.jpg" alt="Smiths Køkkenserie" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Køkken3.png" alt="Novo Køkkenserie" />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Køkken4.png" alt="Byo Køkkenserie" />
+                    </div>
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <p class="dknap">Download Kitchen a/s køkkenseriekatalog</p>
+                <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                    <i class="fas fa-download me-2"></i>
+                    Download køkkenkatalog
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio Section-->
+    <section class="page-section produktkategorier" id="produktkategorier">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Produktkategorier</h2>
+            <br><br>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Emhætte.jpg" alt="Emhætterserier" />
+                        <p class="produkt">Emhætte</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Håndvask.png" alt="Håndvaske og armaturer" />
+                        <p class="produkt">Håndvask og armatur</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Komfur.jpg" alt="Serie af komfurer" />
+                        <p class="produkt">Komfur</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Bordplade.png" alt="Bordpladeserier" />
+                        <p class="produkt">Bordplade</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-black mb-0" id="omos">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Om os</h2><br>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">Køkkenfirmaet Kitchen a/s som blev stiftet i år 2020, er ved at blive en stor aktør
+                        på det danske marked. Firmaet har for tiden 5 butikker spredt ud over hele landet. Kitchen a/s
+                        beskæftiger ca. 150 medarbejdere og alle køkkener er danskproducerede.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Kitchen a/s specialiserer sig i luksuskøkkener og lægger især vægt på, at deres
+                        køkkener er udstyret med de seneste trends inden for teknologi. Når man køber et køkken hos
+                        Kitchen a/s, så køber man ikke bare et køkken, men også en livsstil, hvor teknologien er i
+                        højsædet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section-->
+    <section class="page-section" id="kontaktos">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Kontakt os</h2>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input
+                            Placeholder - tjek?-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Fulde navn"
+                                data-sb-validations="required" />
+                            <label for="name">Fulde navn</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">Fulde navn er påkrævet</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
+                                data-sb-validations="required,email" />
+                            <label for="email">Email</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">Email er påkrævet</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email er ikke tilgængelig</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890"
+                                data-sb-validations="required" />
+                            <label for="phone">Telefonnummer</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">Telefonnummer er påkrævet.
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text"
+                                placeholder="Enter your message here..." style="height: 10rem"
+                                data-sb-validations="required"></textarea>
+                            <label for="message">Tekstbesked</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">Tekstbesked er påkrævet
+                            </div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a
+                                    href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div>
+                        <!-- Submit Button-->
+                        <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Find os</h4>
+                    <p class="lead mb-0">
+                        Kitchenvej 33b
+                        <br />
+                        7400 Herning
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Følg os</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Denne hjemmeside er kun til undervisningsbrug</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Emhætte</h2><br>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img//portfolio/Emhætte.jpg"
+                                    alt="Emhætte" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Dette er en emhætte.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Luk sektion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Håndvask og armatur
+                                </h2><br>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Håndvask.png"
+                                    alt="Håndvask" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Dette er en håndvask og et armatur.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Luk sektion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Komfur</h2><br>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Komfur.jpg"
+                                    alt="Komfur" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Dette er et komfur.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Luk sektion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bordplade</h2><br>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Bordplade.png"
+                                    alt="Bordplade" />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Dette er en bordplade.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Luk sektion
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>
